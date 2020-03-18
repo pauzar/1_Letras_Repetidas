@@ -1,0 +1,74 @@
+<script>
+
+
+var Lista_letras = new Array();
+
+Lista_letras.push("P");
+Lista_letras.push("A");
+Lista_letras.push("U");
+Lista_letras.push("L");
+Lista_letras.push("A");
+ 
+
+
+for ( var i = 0; i < Lista_letras.length; i++) 
+{
+var letra = Lista_letras[i];
+console.log("La letra en la posición " + i + " es " + letra);
+}
+
+
+for ( var i = 0; i < Lista_letras.length; i++) 
+{
+var letra = Lista_letras[i];
+switch(letra){
+
+case "A":
+console.log("VOCAL");
+break;
+case "E":
+console.log("VOCAL");
+break;
+case "I":
+console.log("VOCAL");
+break;
+case "O":
+console.log("VOCAL");
+break;
+case "U":
+console.log("VOCAL");
+break;
+default:
+console.log("CONSONANTE");
+break;
+}
+}
+
+var diccionario = new Map();
+diccionario.set("P", 1);
+diccionario.set("A", 2);
+diccionario.set("U", 1);
+diccionario.set("L", 1);
+
+var Lista_letras_apellido = new Array();
+
+Lista_letras_apellido.push("Z");
+Lista_letras_apellido.push("A");
+Lista_letras_apellido.push("R");
+Lista_letras_apellido.push("A");
+Lista_letras_apellido.push("G");
+Lista_letras_apellido.push("O");
+Lista_letras_apellido.push("Z");
+Lista_letras_apellido.push("A");
+
+
+var Lista_letras_nomap = Lista_letras.concat(Lista_letras_apellido);
+Lista_letras_nomap.splice(5,0,"");
+
+for ( var j = 0; j < Lista_letras_nomap.length; j++) 
+{
+var letra1 = Lista_letras_nomap[j];
+console.log("La letra en la posición " + j + " es " + letra1);
+}
+
+</script>
